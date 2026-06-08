@@ -1,1 +1,22 @@
+/* GENERAL */
 
+body {
+font-family: 'Poppins', Arial, sans-serif;
+background-color: #f4f4f4;
+}
+
+/* HEADER */
+
+.titulo-principal {
+color: #0066cc;
+}
+
+/* NAVEGACION */
+
+nav {
+background-color: #222222;
+}
+
+a {
+color: #ffffff;
+}
