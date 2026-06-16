@@ -20,3 +20,34 @@ background-color: #222222;
 a {
 color: #ffffff;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  margin: 20px 0;
+}
+
+.card, .contenedor, article {
+  padding: 20px;
+  margin: 10px;
+}
