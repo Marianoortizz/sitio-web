@@ -1,0 +1,108 @@
+/* GENERAL */
+
+body {
+font-family: 'Poppins', Arial, sans-serif;
+background-color: #f4f4f4;
+}
+
+/* HEADER */
+
+.titulo-principal {
+color: #0066cc;
+}
+
+/* NAVEGACION */
+
+nav {
+background-color: #222222;
+}
+
+a {
+color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  margin: 20px 0;
+}
+
+.card, .contenedor, article {
+  padding: 20px;
+  margin: 10px;
+}
+/* MOBILE FIRST */
+.grid-principal {
+  display: grid;
+  grid-template-areas:
+    "presentacion"
+    "bio"
+    "habilidades"
+    "galeria";
+  gap: 1.5rem;
+}
+
+.presentacion { grid-area: presentacion; }
+.bio { grid-area: bio; }
+.habilidades { grid-area: habilidades; }
+.galeria { grid-area: galeria; }
+
+.proyectos-grid {
+  display: grid;
+  grid-template-areas:
+    "proyecto1"
+    "proyecto2"
+    "proyecto3";
+  gap: 1.5rem;
+}
+
+.proyecto1 { grid-area: proyecto1; }
+.proyecto2 { grid-area: proyecto2; }
+.proyecto3 { grid-area: proyecto3; }
+
+@media (min-width: 768px) {
+  .grid-principal {
+    grid-template-areas:
+      "presentacion presentacion"
+      "bio habilidades"
+      "galeria galeria";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-principal {
+    grid-template-areas:
+      "presentacion presentacion presentacion"
+      "bio habilidades galeria";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .proyectos-grid {
+    grid-template-areas:
+      "proyecto1 proyecto2 proyecto3";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+  
