@@ -20,4 +20,4 @@ Mariano Facundo Ortiz
 
 ## Sitio web
 
-Link del sitio desplegado en GitHub Pages.
+[ver sitio web](https://marianoortizz.github.io/sitio-web/)

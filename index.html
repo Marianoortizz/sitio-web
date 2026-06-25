@@ -26,8 +26,10 @@
 
     <button class="navbar-toggler" type="button"
       data-bs-toggle="collapse"
-      data-bs-target="#navbarNav">
-
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -98,7 +100,6 @@ profesionalmente en el área tecnológica.
 
 <section class="galeria">
 <h2>Galería</h2>
-
 <div id="carouselExample" class="carousel slide">
 
 <div class="carousel-inner">
@@ -131,7 +132,7 @@ data-bs-slide="next">
 </section>
 </main>
 
-<footer>
+<footer class="text-center bg-dark text-white py-3">
 <p>&copy; 2026 Mariano Facundo Ortiz</p>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
