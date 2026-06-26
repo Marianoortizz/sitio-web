@@ -1,0 +1,25 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.card {
+  @include sombra-suave;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.hero {
+  @include flex-centro;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.boton-principal {
+background-color: $color-principal;
+color: white;
+padding: 10px 20px;
+border-radius: 5px;
+}

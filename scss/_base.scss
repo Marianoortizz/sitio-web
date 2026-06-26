@@ -1,0 +1,12 @@
+@use "variables" as *;
+
+body {
+  font-family: $fuente-principal;
+  background-color: $color-fondo;
+  color: $color-texto;
+}
+
+h1,
+h2 {
+  color: $color-principal;
+}

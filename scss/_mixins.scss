@@ -1,0 +1,9 @@
+@mixin flex-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin sombra-suave {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
