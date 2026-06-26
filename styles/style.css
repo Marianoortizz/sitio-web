@@ -13,41 +13,11 @@ color: #0066cc;
 
 /* NAVEGACION */
 
-nav {
-background-color: #222222;
-}
-
 a {
 color: #ffffff;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 40px;
-  margin: 20px 0;
-}
-
-.card, .contenedor, article {
+.card, .contenedor {
   padding: 20px;
   margin: 10px;
 }
@@ -105,4 +75,26 @@ section {
   }
 }
 
-  
+  .card {
+border: none;
+border-radius: 15px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+h2 {
+margin-bottom: 30px;
+font-weight: bold;
+}
+
+.btn {
+border-radius: 10px;
+}
+
+section {
+padding: 50px 0;
+}
