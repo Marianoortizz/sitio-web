@@ -68,12 +68,20 @@ color: #ffffff;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .proyectos-grid {
-    grid-template-areas:
-      "proyecto1 proyecto2 proyecto3";
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+ .proyectos-grid {
+display: grid;
+grid-template-areas:
+"titulo titulo titulo"
+"proyecto1 proyecto2 proyecto3";
+grid-template-columns: 1fr 1fr 1fr;
+gap: 1.5rem;
 }
+.proyectos-grid > section {
+grid-area: titulo;
+}
+
+  
+
 
   .card {
 border: none;
@@ -96,5 +104,5 @@ border-radius: 10px;
 }
 
 section {
-padding: 50px 0;
+padding: 15px 0;
 }
